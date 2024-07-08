@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --prime: #fb4609;
-    --light-color: #cf1c40;
-    --bg-color: #080808;
-    --second-bg-color: #131313;
-    --text-color: white;
+    --prime: #2109fb;
+    --bg-color: #ffffff;
+    --second-bg-color: #ffffff;
+    --text-color: rgb(0, 0, 0);
 }
 
 * {
@@ -36,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 10% 2rem;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(231, 230, 230, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -105,7 +104,7 @@ section {
 
 span {
     color: var(--prime);
-    text-shadow: 0 0 25px var(--prime);
+    text-shadow: 0 0 18px var(--prime);
 }
 
 .logo span i {
@@ -140,9 +139,9 @@ span {
 }
 
 .home-img img:hover {
-    box-shadow: 0 0 25px var(--prime),
-        0 0 50px var(--prime),
-        0 0 100px var(--prime);
+    box-shadow: 0 0 20px var(--prime),
+        0 0 40px var(--prime),
+        0 0 60px var(--prime);
 }
 
 .home-content p {
@@ -168,7 +167,7 @@ span {
 }
 
 .social-icon a:hover {
-    color: var(--text-color);
+    color: white;
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--prime);
     background-color: var(--prime);
@@ -178,10 +177,10 @@ span {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--prime);
-    box-shadow: 0 0 25px var(--prime);
+    box-shadow: 0 0 5px var(--prime);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: black;
+    color: var(--bg-color);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -191,7 +190,7 @@ span {
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 50px var(--prime);
+    box-shadow: 0 0 10px var(--prime);
 }
 
 .btn-group {
@@ -207,113 +206,30 @@ span {
 }
 
 .btn-group a:nth-of-type(2) {
-    background-color: black;
+    background-color: transparent;
     color: var(--prime);
     border: 2px solid var(--prime);
-    box-shadow: 0 0 25px transparent;
+    box-shadow: 0 0 5px transparent;
 }
 
 .btn-group a:nth-of-type(2):hover {
-    box-shadow: 0 0 25px var(--prime);
+    box-shadow: 0 0 10px var(--prime);
     background-color: var(--prime);
-    color: black;
+    color: var(--bg-color);
 }
 
 .project-btn a:nth-of-type(1) {
     background-color: transparent;
     color: var(--prime);
     border: 2px solid var(--prime);
-    box-shadow: 0 0 25px transparent;
+    box-shadow: 0 0 5px transparent;
 }
 
 .project-btn a:nth-of-type(1):hover {
-    box-shadow: 0 0 25px var(--prime);
+    box-shadow: 0 0 10px var(--prime);
     background-color: var(--prime);
-    color: black;
+    color: var(--bg-color);
 }
-
-/**
-
-.moving-text {
-    font-size: 34px;
-    font-weight: 600;
-    min-height: 280px;
-}
-
-.moving-text span {
-    position: relative;
-}
-
-.moving-text span::before {
-    content: "Web Developer";
-    color: var(--prime);
-    animation: words 20s infinite;
-}
-
-.moving-text span::after {
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to{
-        border-left: 2px solid var(--prime);
-    }
-}
-
-@keyframes words {
-    0%,
-    25%{
-        content: "Frontend Designer";
-    }
-    26%,
-    50%{
-        content: "Web Designer";
-    }
-    51%,
-    75%{
-        content: "Frontend Developer";
-    }
-    76%,
-    100%{
-        content: "Logo Designer";
-    }
-}
-
-@keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%,
-    100%{
-        width: calc(100% + 8px);
-    }
-}
-
-**/
 
 .about {
     display: grid;
@@ -349,13 +265,13 @@ span {
 .about-text h4 {
     font-size: 29px;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);
     line-height: 1.7;
     margin: 15px 0 30px;
 }
 
 .about-text p {
-    color: aliceblue;
+    color: var(--text-color);
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -427,7 +343,7 @@ span {
 .edu-date {
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: var(--prime);
     margin: 6px 0 15px;
 }
 
@@ -448,13 +364,13 @@ span {
 
 .edu-content h3 {
     font-size: 20px;
-    color: white;
+    color: var(--text-color);
     margin: 0 0 10px;
     font-weight: 500;
 }
 
 .edu-content p {
-    color: white;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -536,7 +452,7 @@ span {
 }
 
 .project {
-    background: url("https://img.freepik.com/premium-photo/orange-purple-swirl-background-with-black-background_894766-701.jpg")center no-repeat;
+    background: url("")center no-repeat;
     background-size: cover;
 }
 
@@ -569,8 +485,8 @@ span {
 }
 
 .project-element:hover {
-    box-shadow: 0 0 25px var(--prime),
-                0 0 50px var(--prime);
+    box-shadow: 0 0 10px var(--prime),
+                0 0 25px var(--prime);
     transform: scale(1.02);            
 }
 
@@ -620,8 +536,8 @@ span {
 .review-element {
     min-height: 400px;
     max-width: 450px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 3px solid rgb(78, 78, 78);
+    background-color: transparent;
+    border: 3px solid var(--prime);
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 30px 30px;
@@ -639,7 +555,7 @@ span {
 .review-element:hover {
     border: 3px solid var(--prime);
     transform: translateY(-10px)scale(1.03);
-    box-shadow: 0 0 50px var(--prime);
+    box-shadow: 0 0 25px var(--prime);
 }
 
 .review-element h2 {
