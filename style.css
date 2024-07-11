@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --prime: #2109fb;
-    --bg-color: #ffffff;
-    --second-bg-color: #ffffff;
-    --text-color: rgb(0, 0, 0);
+    --prime: #fafafc;
+    --bg-color: #000000;
+    --second-bg-color: #101010;
+    --text-color: rgb(255, 255, 255);
 }
 
 * {
@@ -466,7 +466,7 @@ span {
 }
 
 .project-element {
-    height: 520px;
+    height: 470px;
     max-width: 450px;
     background-color: var(--second-bg-color);
     backdrop-filter: blur(30px);
