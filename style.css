@@ -19,6 +19,11 @@
     scroll-behavior: smooth;
 }
 
+h5 {
+    font-size: 16px;
+    margin-bottom: -13px;
+}
+
 html {
     font-size: 60%;
     overflow-x: hidden;
@@ -167,7 +172,7 @@ span {
 }
 
 .social-icon a:hover {
-    color: white;
+    color: #000000;
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--prime);
     background-color: var(--prime);
@@ -235,9 +240,9 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 0.5rem;
+    gap: -0.5rem;
     background-color: var(--second-bg-color);
-    padding: 100px 200px;
+    padding: 100px 175px;
 }
 
 .about-img {
@@ -570,3 +575,4 @@ span {
     color: gold;
     font-size: 2rem;
 }
+
