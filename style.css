@@ -39,7 +39,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 5%;
+    padding: 2rem 10% 2rem;
     background: rgba(231, 230, 230, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -49,7 +49,7 @@ body {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--text-color);
     font-weight: 200;
     cursor: pointer;
@@ -67,7 +67,7 @@ body {
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
-    margin-left: 2rem;
+    margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
@@ -88,22 +88,21 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 8rem 5% 5rem;
+    padding: 10rem 12% 10rem;
 }
 
 .home {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 15rem;
 }
 
 .home-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: baseline;
+    text-align: left;
     justify-content: center;
     margin-top: 3rem;
 }
@@ -118,16 +117,16 @@ span {
 }
 
 .home-content h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .home-content h1 {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: 700;
-    margin-top: 1rem;
-    line-height: 1.2;
+    margin-top: 1.5rem;
+    line-height: 1;
 }
 
 .home-img {
@@ -136,9 +135,8 @@ span {
 
 .home-img img {
     position: relative;
-    top: 2rem;
-    width: 70vw;
-    max-width: 300px;
+    top: 3rem;
+    width: 28vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--prime);
     cursor: pointer;
@@ -155,45 +153,44 @@ span {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
-    max-width: 90%;
+    max-width: 1000px;
 }
 
 .social-icon a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     background: transparent;
     border: 2px solid var(--prime);
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 50%;
     color: var(--prime);
-    margin: 2rem 1rem 2rem 0;
+    margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
 
 .social-icon a:hover {
     color: #000000;
-    transform: scale(1.2) translateY(-5px);
+    transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px var(--prime);
     background-color: var(--prime);
 }
 
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 2.8rem;
     background: var(--prime);
     box-shadow: 0 0 5px var(--prime);
     border-radius: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--bg-color);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    margin-bottom: 1rem;
 }
 
 .btn:hover {
@@ -203,16 +200,14 @@ span {
 
 .btn-group {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 1.5rem;
 }
 
 .project-btn {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 6rem;
 }
 
 .btn-group a:nth-of-type(2) {
@@ -243,24 +238,21 @@ span {
 
 .about {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: -0.5rem;
     background-color: var(--second-bg-color);
-    padding: 80px 8%;
+    padding: 100px 175px;
 }
 
 .about-img {
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
 }
 
 .about-img img {
     position: relative;
     top: 1rem;
-    width: 60vw;
-    max-width: 250px;
+    width: 18vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--prime);
     cursor: pointer;
@@ -268,8 +260,7 @@ span {
 }
 
 .about-text h2 {
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 60px;
 }
 
 .about-text h2 span {
@@ -277,39 +268,37 @@ span {
 }
 
 .about-text h4 {
-    font-size: 2rem;
+    font-size: 29px;
     font-weight: 600;
     color: var(--text-color);
-    line-height: 1.5;
-    margin: 15px 0 20px;
-    text-align: center;
+    line-height: 1.7;
+    margin: 15px 0 30px;
 }
 
 .about-text p {
     color: var(--text-color);
-    font-size: 1.6rem;
+    font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 3rem;
-    text-align: center;
+    margin-bottom: 4rem;
 }
 
 .heading {
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-align: center;
     margin: 0;
 }
 
 .education {
-    padding: 80px 5%;
+    padding: 100px 15px;
     background: var(--second-bg-color);
 }
 
 .education h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .edu-items {
-    max-width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -319,60 +308,67 @@ span {
 .edu-items::before {
     content: "";
     position: absolute;
-    width: 3px;
+    width: 5px;
     height: 100%;
     background-color: var(--prime);
-    left: 20px;
+    left: calc(50% - 1px);
 }
 
 .edu-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 100%;
     position: relative;
-    padding-left: 50px;
-    text-align: left;
 }
 
 .edu-item:last-child {
     margin-bottom: 0;
 }
 
+.edu-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.edu-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
 .edu-dot {
-    height: 15px;
-    width: 15px;
+    height: 21px;
+    width: 21px;
     background-color: var(--prime);
-    box-shadow: 0 0 15px var(--prime),
-                0 0 30px var(--prime);
+    box-shadow: 0 0 25px var(--prime),
+                0 0 50px var(--prime);
     position: absolute;
-    left: 14px;
+    left: calc(50% - 8px);
     border-radius: 50%;
     top: 10px;            
 }
 
 .edu-date {
-    font-size: 1.6rem;
+    font-size: 20px;
     font-weight: 800;
     color: var(--prime);
-    margin: 6px 0 10px;
+    margin: 6px 0 15px;
 }
 
 .edu-content {
     background-color: var(--bg-color);
     border: 3px solid var(--prime);
-    padding: 20px;
-    border-radius: 2rem;
+    padding: 30px 50px;
+    border-radius: 4rem;
     box-shadow: 0 0 10px var(--prime);
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .edu-content:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
     box-shadow: 0 0 25px var(--prime);
 }
 
 .edu-content h3 {
-    font-size: 1.8rem;
+    font-size: 20px;
     color: var(--text-color);
     margin: 0 0 10px;
     font-weight: 500;
@@ -380,13 +376,13 @@ span {
 
 .edu-content p {
     color: var(--text-color);
-    font-size: 1.4rem;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 22px;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -395,7 +391,7 @@ span {
 
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
-    width: 25px;
+    width: 50px;
 }
 
 .services {
@@ -404,13 +400,13 @@ span {
 }
 
 .services h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     color: var(--prime);
 }
 
 .service-options {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -421,16 +417,15 @@ span {
     justify-content: center;
     background: var(--second-bg-color);
     color: var(--prime);
-    border: 4px solid var(--prime);
-    height: auto;
-    min-height: 380px;
-    border-radius: 2rem;
+    border: 5px solid var(--prime);
+    height: 480px;
+    border-radius: 3rem;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 
 .service-option:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow: 0 0 25px var(--prime);
 }
 
@@ -441,18 +436,18 @@ span {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 3rem 2rem;
+    padding: 5rem 5rem;
 }
 
 .service-option .service-info i {
-    font-size: 5rem;
+    font-size: 8rem;
     text-shadow: 0 0 25px var(--prime);
 }
 
 .service-info h4 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 800;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 }
 
 .service-info p {
@@ -468,27 +463,26 @@ span {
 
 .project-list {
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    margin: 3rem 0;
-    gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    place-items: centre;
+    margin: 5rem 0;
+    gap: 4rem;
+    row-gap: 5rem;
 }
 
 .project-element {
-    height: auto;
-    min-height: 400px;
-    width: 100%;
-    max-width: 350px;
+    height: 470px;
+    max-width: 450px;
     background-color: var(--second-bg-color);
     backdrop-filter: blur(30px);
     border: 2px solid var(--prime);
-    border-radius: 2rem;
+    border-radius: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 3rem 2rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 5px var(--prime);
@@ -502,19 +496,17 @@ span {
 }
 
 .project-element img {
-    border-radius: 12px;
-    width: 85%;
-    max-width: 300px;
+    border-radius: 18px;
+    max-width: 20vw;
     object-fit: cover;
 }
 
 .project-element h3 {
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
 .project-element p {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.6rem;
 }
 
 .reviews {
@@ -530,11 +522,11 @@ span {
 }
 
 .reviews .heading {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .reviews-list img {
-    width: 10rem;
+    width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--prime);
     box-shadow: 0 0 25px var(--prime);
@@ -542,19 +534,18 @@ span {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 
 .review-element {
-    min-height: 350px;
-    width: 100%;
-    max-width: 350px;
+    min-height: 400px;
+    max-width: 450px;
     background-color: transparent;
     border: 3px solid var(--prime);
     border-radius: 2rem;
-    margin: 0;
-    padding: 25px 20px;
+    margin: 0 2rem;
+    padding: 30px 30px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -568,12 +559,12 @@ span {
 
 .review-element:hover {
     border: 3px solid var(--prime);
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-10px)scale(1.03);
     box-shadow: 0 0 25px var(--prime);
 }
 
 .review-element h2 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 .review-element p {
@@ -582,7 +573,7 @@ span {
 
 .rating {
     color: gold;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 /* Mobile Navigation */
